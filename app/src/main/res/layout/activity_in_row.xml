@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".inRow">
 
+    <TextView
+        android:id="@+id/InRowHint"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="3dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="@+id/gridView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:numColumns="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InRowHint">
+
+    </GridView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
